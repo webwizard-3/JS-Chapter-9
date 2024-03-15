@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #abc {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 45px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        p {
+            color: black;
+            font-size: 35px;
+            margin-left: 20px;
+            margin-top: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center !important;
+            font-size: 33px;
+            border-radius: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: cadetblue;
+            color: aliceblue;
+        }
+
+        #H2 {
+            text-align: center;
+            background: black;
+            color: aliceblue;
+            font-family: monospace;
+            width: 100%;
+            padding: 20px 20px 20px 20px;
+        }
+
+        #H2 span {
+            color: blue;
+            font-family: monospace;
+            margin: 1%;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1 id="abc">Mobile Phone Recommonder</h1>
+
+
+
+    <script>
+        var budget = prompt("What is your budget? (low/medium/high)")
+        var system = prompt("Which operating system do you prefer? (android/ios)")
+        var camera = prompt("What camera quality do you need?  (basic/moderate/high)")
+        var battery = prompt("How important is battery life to you? (short/average/long)")
+        var screen = prompt("What screen size do you prefer? (small/medium/large)")
+
+        if (budget == "high" && system == "ios" && camera == "high") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>iPhone 15 Pro Max</p><br>")
+            document.write("<p>Screen size(inches): 6.7</p><br>")
+            document.write("<p>Battery :claims up to 29 hours of video playback (25 hours streamed)</p><br>")
+            document.write("<p>Rear Camera:	48MP + 12MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $1,599</p><br>")
+        }
+        else if (budget == "high" && system == "ios" && camera == "moderate") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>iPhone 15 Pro</p><br>")
+            document.write("<p>Screen size(inches): 6.1</p><br>")
+            document.write("<p>Battery :claims up to 23 hours of video playback (20 hours streamed)</p><br>")
+            document.write("<p>Rear Camera:	48MP + 12MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $1,499</p><br>")
+        }
+        else if (budget == "high" && system == "ios" && camera == "basic") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>iPhone 15 Plus</p><br>")
+            document.write("<p>Screen size(inches): 6.7</p><br>")
+            document.write("<p>Battery :claims up to 26 hours of video playback (20 hours streamed)</p><br>")
+            document.write("<p>Rear Camera:	48MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $1,199</p><br>")
+        }
+        else if (budget == "medium" && system == "ios" && camera == "high") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>iPhone 15</p><br>")
+            document.write("<p>Screen size(inches): 6.1</p><br>")
+            document.write("<p>Battery :claims up to 20 hours of video playback (16 hours streamed)</p><br>")
+            document.write("<p>Rear Camera:	48MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $1,099</p><br>")
+        }
+
+        else if (budget == "medium" && system == "ios" && camera == "moderate") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>iPhone 14 Pro Max</p><br>")
+            document.write("<p>Screen size(inches): 6.7</p><br>")
+            document.write("<p>Battery (mAh): 4323</p><br>")
+            document.write("<p>Rear Camera:	48MP + 12MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $1099</p><br>")
+        }
+        else if (budget == "medium" && system == "ios" && camera == "basic") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>iPhone 14 Pro</p><br>")
+            document.write("<p>Screen size(inches): 6.1</p><br>")
+            document.write("<p>Battery (mAh): 3240</p><br>")
+            document.write("<p>Rear Camera:	48MP + 12MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $999</p><br>")
+        }
+        else if (budget == "low" && system == "ios" && camera == "high") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>iPhone 13</p><br>")
+            document.write("<p>Screen size(inches): 6.1</p><br>")
+            document.write("<p>Battery (mAh): 3240</p><br>")
+            document.write("<p>Rear Camera:	12MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $799</p><br>")
+        }
+        else if (budget == "low" && system == "ios" && camera == "moderate") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>iPhone Apple iPhone 11</p><br>")
+            document.write("<p>Screen size(inches): 6.1</p><br>")
+            document.write("<p>Battery (mAh): 3046</p><br>")
+            document.write("<p>Rear Camera:	12MP+12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $499</p><br>")
+        }
+        else if (budget == "low" && system == "ios" && camera == "basic") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>iPhone SE (3rd generation)</p><br>")
+            document.write("<p>Screen size(inches): 4.7</p><br>")
+            document.write("<p>Battery (mAh): 2018</p><br>")
+            document.write("<p>Rear Camera:	12MP</p><br>")
+            document.write("<p>Front Camera: 7MP</p><br>")
+            document.write("<p>Price(USD): $429</p><br>")
+        }
+        else if (budget == "high" && system == "android" && camera == "high") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>Samsung Galaxy S23 Ultra	</p><br>")
+            document.write("<p>Screen size(inches): 6.8</p><br>")
+            document.write("<p>Battery (mAh): 5000</p><br>")
+            document.write("<p>Rear Camera:	200MP + 10MP + 10MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $1188</p><br>")
+        }
+        else if (budget == "high" && system == "android" && camera == "moderate") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>Sony Xperia 1 IV</p><br>")
+            document.write("<p>Screen size(inches): 6.5</p><br>")
+            document.write("<p>Battery (mAh): 5000</p><br>")
+            document.write("<p>Rear Camera:	12MP + 12MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 12MP</p><br>")
+            document.write("<p>Price(USD): $1399</p><br>")
+        }
+        else if (budget == "high" && system == "android" && camera == "basic") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>Xiaomi 13 Pro</p><br>")
+            document.write("<p>Screen size(inches): 6.7</p><br>")
+            document.write("<p>Battery (mAh): 4820</p><br>")
+            document.write("<p>Rear Camera:	50MP + 50MP + 50MP</p><br>")
+            document.write("<p>Front Camera: 32MP</p><br>")
+            document.write("<p>Price(USD): $1099</p><br>")
+        }
+
+        else if (budget == "medium" && system == "android" && camera == "high") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>Motorola Edge 30 Ultra</p><br>")
+            document.write("<p>Screen size(inches): 6.7</p><br>")
+            document.write("<p>Battery (mAh): 4610</p><br>")
+            document.write("<p>Rear Camera:	200MP + 50MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 32MP</p><br>")
+            document.write("<p>Price(USD): $799</p><br>")
+        }
+        else if (budget == "medium" && system == "android" && camera == "moderate") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>Google Pixel 7</p><br>")
+            document.write("<p>Screen size(inches): 6.4</p><br>")
+            document.write("<p>Battery (mAh): 4800</p><br>")
+            document.write("<p>Rear Camera:	50MP + 12MP</p><br>")
+            document.write("<p>Front Camera: 8MP</p><br>")
+            document.write("<p>Price(USD): 	$699</p><br>")
+        }
+        else if (budget == "medium" && system == "android" && camera == "basic") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>OnePlus 11R</p><br>")
+            document.write("<p>Screen size(inches): 6.7</p><br>")
+            document.write("<p>Battery (mAh): 5000</p><br>")
+            document.write("<p>Rear Camera:	50MP + 12MP + 2MP</p><br>")
+            document.write("<p>Front Camera: 16MP</p><br>")
+            document.write("<p>Price(USD): $599</p><br>")
+        }
+        
+        else if (budget == "low" && system == "android" && camera == "high") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>Moto G Stylus (2023)</p><br>")
+            document.write("<p>Screen size(inches): 6.8</p><br>")
+            document.write("<p>Battery (mAh): 5000</p><br>")
+            document.write("<p>Rear Camera:	50MP + 8MP + 2MP</p><br>")
+            document.write("<p>Front Camera: 16MP</p><br>")
+            document.write("<p>Price(USD): $299</p><br>")
+        }
+        else if (budget == "low" && system == "android" && camera == "moderate") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>Samsung Galaxy A14 5G</p><br>")
+            document.write("<p>Screen size(inches): 6.6</p><br>")
+            document.write("<p>Battery (mAh): 5000</p><br>")
+            document.write("<p>Rear Camera:	50MP + 2MP + 2MP</p><br>")
+            document.write("<p>Front Camera: 13MP</p><br>")
+            document.write("<p>Price(USD): $249</p><br>")
+        }
+        else if (budget == "low" && system == "android" && camera == "basic") {
+            document.write("<h1>Based on your preference, we recommend you following  phones</h1><br>");
+            document.write("<p>Nokia G21</p><br>")
+            document.write("<p>Screen size(inches): 6.5</p><br>")
+            document.write("<p>Battery (mAh): 5050</p><br>")
+            document.write("<p>Rear Camera:	50MP + 8MP + 2MP</p><br>")
+            document.write("<p>Front Camera: 8MP</p><br>")
+            document.write("<p>Price(USD): $199</p><br>")
+        }
+        else{
+            alert("Invalid options,Please try again!")
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <h2 id="H2">CopyRight © 2024<span>By</span>Abdul Wahab</h2>
+</body>
+
+</html>
